@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> {{ heading }} </h1>
+        </div>
+        <div class="form" >
+           <form method="POST" action="http://localhost:3000/index/Machines">
+                <ul>
+                    <li>Facility: <br> <input type="text" autocomplete="off" id="facility" name="Facility" value="" placeholder="">  </li>
+                    <li>Machine Code: <br> <input type="text" autocomplete="off" id="mcode" name="MachineCode" value="" placeholder="">  </li>
+                    <li>Employee Code:<br> <input type="text" autocomplete="off" id="emotor" name="EmpCode" value="" placeholder=""> </li>
+                    <li>Mobile Number:<br> <input type="text" autocomplete="off" id="mobile" name="SMS" value="" placeholder=""> </li>
+                    <li>Email:<br> <input type="text" autocomplete="off" id="email" name="Email" value="" placeholder="">
+                    </li>
+                   <input type="submit" style="background-color: blue; color: #fff; width: 50px;" id="submitBtn" value="Add" />
+                </ul>
+            </form>
+        </div>
+        <a href="">Back to List</a>
+    </div>
+</body>
+
+</html>

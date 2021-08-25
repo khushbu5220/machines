@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} </title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> {{ heading }} </h1>
+        </div>
+        {{{button}}}
+        {{{links}}}
+        <div class="machine">
+
+            <table>
+                <tr>
+                    <th>Facility</th>
+                    <th>Machine Code</th>
+                    <th>Machine Name</th>
+                    <th>No of Hydraulic motors</th>
+                    <th>No of Coolant motors</th>
+                    <th>No of Lubrication motors</th>
+                    <th></th>
+                </tr>
+    
+                <tr>
+                    <th>{{#each Facility}}<li>{{this}} </li>{{/each}} </th> 
+                    <th>{{#each MachineCode}}<li>{{this}} </li>{{/each}}</th>
+                    <th>{{#each MachineName}}<li>{{this}} </li>{{/each}} </th>
+                    <th>{{#each NoOfHydraulicMotors}}<li>{{this}}</li>{{/each}}</th>
+                    <th>{{#each NoOfCoolantMotors}}<li>{{this}}</li>{{/each}}</th>
+                    <th>{{#each NoOfLubricationMotors}}<li>{{this}}</li>{{/each}}</th>
+                 </tr>   
+            </table>
+
+        </div>
+        
+
+        <div class="info">
+            <p>© 2019 - PMEM</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+{{!--
+Isme tumko modify krna padega, wo ek box ki trh bnega and usme loop lagega --}}

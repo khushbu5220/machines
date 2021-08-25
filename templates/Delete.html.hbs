@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Machine - PMEM</title>
+        <link rel="stylesheet" href="/style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> {{ heading }} </h1>
+        </div>
+        <div class="tag">
+            <h3>Are you sure you want to delete this?</h3>
+        </div>
+        <form method="POST">
+        <div class="table"> {{> info }} </div>
+         <input type="submit" style="background-color: blue; color: #fff; width: 50px;" id="submitBtn" value="Delete" /> | <a href="">Back to list </a></div>
+        </form>
+           <div class="info">
+            <p>2019 - PMEM</p>
+        </div>
+    </div>
+</body>
+
+</html>

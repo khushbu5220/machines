@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - PMEM</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> {{ heading }} </h1>
+        </div>
+        {{{button}}}
+        {{{links}}}
+        <div class="machine">
+
+           <table>
+    <tr>
+        <th>Facility</th>
+        <th>Machine Code</th>
+        <th>Employee code</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+        <th></th>
+    </tr>
+    <tr>
+    <td>{{#each Facility}}<li>{{this}}</li>{{/each}} </td>
+    <td>{{#each MachineCode}} <li>{{this}}</li>{{/each}} </td>
+    <td>{{#each EmpCode}}<li>{{this}}</li>{{/each}}</td>
+    <td>{{#each SMS}}<li>{{this}}</li>{{/each}}</td>
+    <td>{{#each Email}}<li>{{this}}</li>{{/each}}</td>
+    <td>{{{link}}}</td>
+</tr>
+</table>
+
+        </div>
+
+        <div class="info">
+            <p>© 2019 - PMEM</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

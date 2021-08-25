@@ -1,0 +1,67 @@
+body{
+    background-color: #ffff;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 100px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.heading {
+    color: #333;
+    text-align: left;
+}
+
+.button{
+    background-color: #005dd6;
+    padding: 10px;
+    border-radius: 5px;
+    float:left;
+}
+
+.button a {
+    color: #fff;
+}
+
+.link {
+    float:right;
+}
+
+.link1 {
+    float: left;
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+  
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    line-height: 20px;
+}
+
+
+li {
+    list-style-type:  none;
+    /* border-bottom: 1px solid #ddd; */
+    margin-bottom: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+input {
+    width: 30px;
+    height: 20px;
+}

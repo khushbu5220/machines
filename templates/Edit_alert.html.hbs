@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1> {{ heading }} </h1>
+        </div>
+        <div class="form">
+           <form method="POST">
+                <ul>
+                    <li>Facility: {{facility}} </li>
+                    <li>Machine Code: {{code}} </li>
+                    <li>No of Hydraulic motors:<br> <input type="text" autocomplete="off" id="hmotor" value="" placeholder=""> </li>
+                    <li>No of Coolant motors:<br> <input type="text" autocomplete="off" id="cmotor" value="" placeholder=""> </li>
+                    <li>No of Lubrication motors:<br> <input type="text" autocomplete="off" id="lmotor" value="" placeholder="">
+                    </li>
+                    <li>No of Machine Name:<br> <input type="text" autocomplete="off" id="name" value="" placeholder="">
+                    </li>
+                   <input type="submit" style="background-color: blue; color: #fff; width: 60px;" id="submitBtn" value="Save" />
+                </ul>
+            </form>
+        </div>
+        <a href="">Back to List</a>
+    </div>
+</body>
+
+</html>
